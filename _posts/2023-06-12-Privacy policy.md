@@ -1,6 +1,5 @@
 ---
 layout: post
-license: "asdf"
 ---
 
 # Privacy policy

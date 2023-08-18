@@ -9,7 +9,7 @@ tags: [privacy]     # TAG names should always be lowercase
 
 Effective Date: 2023-22-06
 
-Thank you for choosing to use BonReader (referred to as "the App"). This Privacy Policy explains how we handle your information when you use our App. We are committed to respecting your privacy and ensuring the confidentiality and security of any personal information you provide. Please read this policy carefully to understand our practices regarding the collection, use, and disclosure of your information.
+Thank you for choosing to use "BonReader Pro" (referred to as "the App"). This Privacy Policy explains how we handle your information when you use our App. We are committed to respecting your privacy and ensuring the confidentiality and security of any personal information you provide. Please read this policy carefully to understand our practices regarding the collection, use, and disclosure of your information.
 
 1. Information Collection:
 

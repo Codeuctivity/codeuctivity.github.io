@@ -44,7 +44,8 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+# https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+google_site_verification: ZS7j4hmJ1y_XGBWQGExPH5dJAOxJtWLzf4fGF1B8bRk
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -200,5 +201,3 @@ jekyll-archives:
 plugins:
   - jekyll-seo-tag
 
-# https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-google_site_verification: ZS7j4hmJ1y_XGBWQGExPH5dJAOxJtWLzf4fGF1B8bRk

@@ -10,32 +10,40 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Visual comparing',
+    Svg: require('@site/static/img/NuGet.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Compare images. One of my nuget packages.<br></br><a href="https://www.nuget.org/packages/Codeuctivity.ImageSharpCompare/">
+        <img src="https://img.shields.io/nuget/v/Codeuctivity.ImageSharpCompare.svg" alt="Nuget" />
+      </a>
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Encrypt your PDFs',
+    Svg: require('@site/static/img/lockpdfy.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Encrypt and decrypt PDFs using LockPDFy. On premise and open source. <a href="https://www.microsoft.com/store/productId/9NC5KPZM2ZRM">
+        <img src="https://img.shields.io/badge/Windows%20Store-LockPDFy-green?style=flat&logo=windows" alt="Windows Store" />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.codeuctivity.LockPDFy">
+        <img src="https://img.shields.io/badge/Google%20Play%20Store-LockPDFy-green?style=flat&logo=android" alt="Google Play Store" />
+      </a>
+
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Digitalize austrian invoices',
+    Svg: require('@site/static/img/bonreader.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+      Scan QR codes on printed invoices and extract, store and export contained data.
+        <a href="https://play.google.com/store/apps/details?id=com.codeuctivity.bonreaderPro">
+        <img src="https://img.shields.io/badge/Google%20Play%20Store-BonReader-green?style=flat&logo=android" alt="Google Play Store" />
+      </a>
       </>
     ),
   },

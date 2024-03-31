@@ -1,0 +1,3 @@
+<h1>howto generate html from md</h1>
+<pre><code class="language-javascript">for file in *.md; do npx marked -o &quot;${file%.md}.html&quot; &quot;$file&quot;; done
+</code></pre>

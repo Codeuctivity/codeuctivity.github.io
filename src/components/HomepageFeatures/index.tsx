@@ -15,8 +15,8 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Compare images. One of my nuget packages.<br></br><a href="https://www.nuget.org/packages/Codeuctivity.ImageSharpCompare/">
-        <img src="https://img.shields.io/nuget/v/Codeuctivity.ImageSharpCompare.svg" alt="Nuget" />
-      </a>
+          <img src="https://img.shields.io/nuget/v/Codeuctivity.ImageSharpCompare.svg" alt="Nuget" />
+        </a>
       </>
     ),
   },
@@ -26,11 +26,11 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Encrypt and decrypt PDFs using LockPDFy. On premise and open source. <a href="https://www.microsoft.com/store/productId/9NC5KPZM2ZRM">
-        <img src="https://img.shields.io/badge/Windows%20Store-LockPDFy-green?style=flat&logo=windows" alt="Windows Store" />
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=com.codeuctivity.LockPDFy">
-        <img src="https://img.shields.io/badge/Google%20Play%20Store-LockPDFy-green?style=flat&logo=android" alt="Google Play Store" />
-      </a>
+          <img src="https://img.shields.io/badge/Windows%20Store-LockPDFy-green?style=flat&logo=windows" alt="Windows Store" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.codeuctivity.LockPDFy">
+          <img src="https://img.shields.io/badge/Google%20Play%20Store-LockPDFy-green?style=flat&logo=android" alt="Google Play Store" />
+        </a>
 
       </>
     ),
@@ -40,16 +40,19 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/bonreader.svg').default,
     description: (
       <>
-      Scan QR codes on printed invoices and extract, store and export contained data.
+        Scan QR codes on printed invoices and extract, store and export contained data.
         <a href="https://play.google.com/store/apps/details?id=com.codeuctivity.bonreaderPro">
-        <img src="https://img.shields.io/badge/Google%20Play%20Store-BonReader-green?style=flat&logo=android" alt="Google Play Store" />
-      </a>
+          <img src="https://img.shields.io/badge/Google%20Play%20Store-BonReaderPro-green?style=flat&logo=android" alt="Google Play Store" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.codeuctivity.bonreader">
+          <img src="https://img.shields.io/badge/Google%20Play%20Store-BonReaderFree-green?style=flat&logo=android" alt="Google Play Store" />
+        </a>
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">

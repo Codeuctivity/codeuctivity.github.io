@@ -1,6 +1,6 @@
 ---
 slug: Bye bye google play store
-title: Welcome
+title: Google play dev account 'codeuctivity' will be removed
 authors: [stesee]
 tags: [google play store, android]
 ---
@@ -9,8 +9,7 @@ Google Play Store is a great platform to distribute Android apps. However, the r
 
 ![1725277366437](image/index/1725277366437.png)
 
-
-The apps look like this in the Google Play Store:
+## App store entries today that will be removed
 
 ### BonReader Pro
 
@@ -53,6 +52,8 @@ https://play.google.com/store/apps/details?id=com.codeuctivity.bonreader
 
 https://youtu.be/Igtaho_6Ies
 
+Its quite the same like 'BonReader Pro' but with commecial.
+
 ![1725277056034](image/index/1725277056034.png)
 
 ### LockPDFy
@@ -60,5 +61,7 @@ https://youtu.be/Igtaho_6Ies
 https://play.google.com/store/apps/details?id=com.codeuctivity.LockPDFy
 
 LockPDFy is a user-friendly, open-source tool for Windows that swiftly encrypts and decrypts PDF files at no cost.
+
+You can still download the version from the windows store.
 
 ![1725277048754](image/index/1725277048754.png)

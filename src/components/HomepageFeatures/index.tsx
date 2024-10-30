@@ -28,7 +28,7 @@ const FeatureList: FeatureItem[] = [
         Encrypt and decrypt PDFs using LockPDFy. On premise and open source. <a href="https://www.microsoft.com/store/productId/9NC5KPZM2ZRM">
           <img src="https://img.shields.io/badge/Windows%20Store-LockPDFy-green?style=flat&logo=windows" alt="Windows Store" />
         </a>
-        <a href="https://play.google.com/store/apps/details?id=com.codeuctivity.LockPDFy">
+        <a href="blog/Bye%20bye%20google%20play%20store">
           <img src="https://img.shields.io/badge/Google%20Play%20Store-LockPDFy-green?style=flat&logo=android" alt="Google Play Store" />
         </a>
 
@@ -41,10 +41,10 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Scan QR codes on printed invoices and extract, store and export contained data.
-        <a href="https://play.google.com/store/apps/details?id=com.codeuctivity.bonreaderPro">
+        <a href="blog/Bye%20bye%20google%20play%20store">
           <img src="https://img.shields.io/badge/Google%20Play%20Store-BonReaderPro-green?style=flat&logo=android" alt="Google Play Store" />
         </a>
-        <a href="https://play.google.com/store/apps/details?id=com.codeuctivity.bonreader">
+        <a href="blog/Bye%20bye%20google%20play%20store">
           <img src="https://img.shields.io/badge/Google%20Play%20Store-BonReaderFree-green?style=flat&logo=android" alt="Google Play Store" />
         </a>
       </>

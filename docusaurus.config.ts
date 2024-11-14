@@ -97,9 +97,13 @@ const config: Config = {
         {
           title: 'Things',
           items: [
-                      {
+            {
               label: 'Nuget',
               href: 'https://www.nuget.org/packages?q=Codeuctivity',
+            },
+            {
+              label: 'Buy me a coffee! Do it!',
+              href: 'https://buymeacoffee.com/stesee',
             },
             // {
             //   label: 'Stack Overflow',

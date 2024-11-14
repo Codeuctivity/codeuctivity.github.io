@@ -15,7 +15,10 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Compare images. One of my nuget packages.<br></br><a href="https://www.nuget.org/packages/Codeuctivity.ImageSharpCompare/">
-          <img src="https://img.shields.io/nuget/v/Codeuctivity.ImageSharpCompare.svg" alt="Nuget" />
+        ImageSharp based <img src="https://img.shields.io/nuget/v/Codeuctivity.ImageSharpCompare.svg" alt="Codeuctivity.ImageSharpCompare" />
+        </a><br></br>
+        <a href="https://www.nuget.org/packages/Codeuctivity.SkiaSharpCompare/">
+          SkiaSharp based <img src="https://img.shields.io/nuget/v/Codeuctivity.SkiaSharpCompare.svg" alt="Codeuctivity.SkiaSharpCompare" />
         </a>
       </>
     ),

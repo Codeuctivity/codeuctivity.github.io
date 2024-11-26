@@ -28,7 +28,7 @@
     "@docusaurus/tsconfig": "3.6.1",
     "@docusaurus/types": "3.6.3",
     "@playwright/test": "^1.49.0",
-    "@types/node": "^22.9.0",
+    "@types/node": "^22.10.0",
     "typescript": "~5.7.2"
   },
   "browserslist": {

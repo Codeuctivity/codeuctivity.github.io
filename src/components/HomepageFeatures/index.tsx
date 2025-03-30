@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Compare images. One of my nuget packages.<br></br><a href="https://www.nuget.org/packages/Codeuctivity.ImageSharpCompare/">
-        ImageSharp based <img src="https://img.shields.io/nuget/v/Codeuctivity.ImageSharpCompare.svg" alt="Codeuctivity.ImageSharpCompare" />
+          ImageSharp based <img src="https://img.shields.io/nuget/v/Codeuctivity.ImageSharpCompare.svg" alt="Codeuctivity.ImageSharpCompare" />
         </a><br></br>
         <a href="https://www.nuget.org/packages/Codeuctivity.SkiaSharpCompare/">
           SkiaSharp based <img src="https://img.shields.io/nuget/v/Codeuctivity.SkiaSharpCompare.svg" alt="Codeuctivity.SkiaSharpCompare" />
@@ -30,6 +30,9 @@ const FeatureList: FeatureItem[] = [
       <>
         Encrypt and decrypt PDFs using LockPDFy. On premise and open source. <a href="https://www.microsoft.com/store/productId/9NC5KPZM2ZRM">
           <img src="https://img.shields.io/badge/Windows%20Store-LockPDFy-green?style=flat&logo=windows" alt="Windows Store" />
+        </a>
+        <a href="obtainium/redirect.html?r=obtainium://add/https://github.com/stesee/PDFEncrypt">
+          <img src="https://img.shields.io/badge/Obtainium-LockPDFy-green?style=flat&logo=android" alt="Obtainium" />
         </a>
         <a href="blog/Bye%20bye%20google%20play%20store">
           <img src="https://img.shields.io/badge/Google%20Play%20Store-LockPDFy-green?style=flat&logo=android" alt="Google Play Store" />

@@ -2,8 +2,10 @@
 slug: Bye bye google play store
 title: Google play dev account 'codeuctivity' will be removed
 authors: [stesee]
-tags: [google play store, android]
+tags: [google play store, android, obtainium]
 ---
+
+**Update 2025 - rereleased: [![Obtainium](https://img.shields.io/badge/Obtainium-LockPDFy-green?style=flat&logo=android)](obtainium/redirect.html?r=obtainium://add/https://github.com/stesee/PDFEncrypt)**
 
 Google Play Store is a great platform to distribute Android apps. However, the recurring effort to keep the changing regulatory requirement up to date is not worth it for me. I have decided to let my dev profile fade away and focus on other things.
 

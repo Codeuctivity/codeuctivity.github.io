@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
         Encrypt and decrypt PDFs using LockPDFy. On premise and open source. <a href="https://www.microsoft.com/store/productId/9NC5KPZM2ZRM">
           <img src="https://img.shields.io/badge/Windows%20Store-LockPDFy-green?style=flat&logo=windows" alt="Windows Store" />
         </a>
-        <a href="obtainium/redirect.html?r=obtainium%3A%2F%2Fadd%2Fhttps%3A%2F%2Fgithub.com%2Fstesee%2FPDFEncrypt">
+        <a href="/obtainium/redirect.html?r=obtainium%3A%2F%2Fadd%2Fhttps%3A%2F%2Fgithub.com%2Fstesee%2FPDFEncrypt">
           <img src="https://img.shields.io/badge/Obtainium-LockPDFy-green?style=flat&logo=android" alt="Obtainium" />
         </a>
         <a href="blog/Bye%20bye%20google%20play%20store">

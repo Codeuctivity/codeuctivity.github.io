@@ -33,9 +33,9 @@ const FeatureList: FeatureItem[] = [
         </a>
         <a href="/obtainium/redirect.html?r=obtainium%3A%2F%2Fadd%2Fhttps%3A%2F%2Fgithub.com%2Fstesee%2FPDFEncrypt">
           <img src="https://img.shields.io/badge/Obtainium-LockPDFy-green?style=flat&logo=android" alt="Obtainium" />
-        </a>
+        </a><br></br>
         <a href="blog/Bye%20bye%20google%20play%20store">
-          <img src="https://img.shields.io/badge/Google%20Play%20Store-LockPDFy-green?style=flat&logo=android" alt="Google Play Store" />
+          <img src="https://img.shields.io/badge/Google%20Play%20Store-LockPDFy-lightgrey?style=flat&logo=android" alt="Google Play Store" />
         </a>
 
       </>
@@ -48,10 +48,10 @@ const FeatureList: FeatureItem[] = [
       <>
         Scan QR codes on printed invoices and extract, store and export contained data.
         <a href="blog/Bye%20bye%20google%20play%20store">
-          <img src="https://img.shields.io/badge/Google%20Play%20Store-BonReaderPro-green?style=flat&logo=android" alt="Google Play Store" />
+          <img src="https://img.shields.io/badge/Google%20Play%20Store-BonReaderPro-lightgrey?style=flat&logo=android" alt="Google Play Store" />
         </a>
         <a href="blog/Bye%20bye%20google%20play%20store">
-          <img src="https://img.shields.io/badge/Google%20Play%20Store-BonReaderFree-green?style=flat&logo=android" alt="Google Play Store" />
+          <img src="https://img.shields.io/badge/Google%20Play%20Store-BonReaderFree-lightgrey?style=flat&logo=android" alt="Google Play Store" />
         </a>
       </>
     ),

@@ -5,7 +5,7 @@ authors: [stesee]
 tags: [google play store, android, obtainium]
 ---
 
-**Update 2025 - rereleased: [![Obtainium](https://img.shields.io/badge/Obtainium-LockPDFy-green?style=flat&logo=android)](pathname:///obtainium/redirect.html?r=obtainium%3A%2F%2Fadd%2Fhttps%3A%2F%2Fgithub.com%2Fstesee%2FPDFEncrypt)**
+**Update 2025 - rereleased: [![Obtainium](https://img.shields.io/badge/Obtainium-LockPDFy-green?style=flat&logo=android)](pathname:///obtainium/redirect.html?r=obtainium%3A%2F%2Fadd%2Fhttps%3A%2F%2Fgithub.com%2Fstesee%2FPDFEncrypt) [![Obtainium](https://img.shields.io/badge/Obtainium-BonReader-green?style=flat&logo=android)](pathname:///obtainium/redirect.html?r=obtainium%3A%2F%2Fadd%2Fhttps%3A%2F%2Fgithub.com%2FCodeuctivity%2Fcodeuctivity.github.io)**
 
 Google Play Store is a great platform to distribute Android apps. However, the recurring effort to keep the changing regulatory requirement up to date is not worth it for me. I have decided to let my dev profile fade away and focus on other things.
 

@@ -27,7 +27,7 @@
     "@docusaurus/module-type-aliases": "^3.8.0",
     "@docusaurus/tsconfig": "^3.9.1",
     "@docusaurus/types": "^3.9.1",
-    "@playwright/test": "^1.55.1",
+    "@playwright/test": "^1.56.0",
     "@types/node": "^24.6.0",
     "typescript": "~5.9.3"
   },

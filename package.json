@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.8.0",
-    "@docusaurus/tsconfig": "^3.9.1",
+    "@docusaurus/tsconfig": "^3.9.2",
     "@docusaurus/types": "^3.9.2",
     "@playwright/test": "^1.56.1",
     "@types/node": "^24.7.2",

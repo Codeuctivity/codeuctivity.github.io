@@ -1,17 +1,13 @@
 ---
-title: "Relaunch App as PWA"
+title: "Relaunch App 'bonreader' as PWA 'BelegScan.at'"
 date: "2026-03-30"
 ---
 
-Our application has undergone a relaunch, and we are excited to introduce the new features as a Progressive Web App (PWA). This approach ensures a smoother user experience and greater accessibility. 
+Our application has undergone a relaunch. and we are excited to introduce the new features as a Progressive Web App (PWA). This approach ensures a smoother user experience and greater accessibility. 
 
-Read more about this at [Belegscan](https://belegscan.at).
+Give it a try at [BelegScan.at](https://belegscan.at).
 
 ![Preview](image/index/belegscan-home.png)
 
 ## New Features
-- Improved loading speed
-- Offline capability
-- Enhanced user interface
-- Push notifications
-- Better performance on mobile devices
+- IPhone and

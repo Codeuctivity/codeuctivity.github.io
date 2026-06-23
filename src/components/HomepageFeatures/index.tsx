@@ -10,6 +10,36 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
+    title: "Digitalize austrian invoices",
+    Svg: require("@site/static/img/bonreader.svg").default,
+    description: (
+      <>
+        Scan QR codes on printed invoices and extract, store and export
+        contained data.
+        <a href="https://belegscan.at/">
+          <img
+            src="https://img.shields.io/badge/Web-BelegScan.at-blue?style=flat&logo=pwa"
+            alt="BelegScan.at PWA"
+          />
+        </a>
+        <a href="/obtainium/redirect.html?r=obtainium%3A%2F%2Fadd%2Fhttps%3A%2F%2Fgithub.com%2FCodeuctivity%2Fcodeuctivity.github.io">
+          <br></br>
+          <img
+            src="https://img.shields.io/badge/Obtainium-BonReader-green?style=flat&logo=android"
+            alt="Obtainium"
+          />
+        </a>
+        <br></br>
+        <a href="blog/Bye%20bye%20google%20play%20store">
+          <img
+            src="https://img.shields.io/badge/Google%20Play%20Store-BonReaderFree-lightgrey?style=flat&logo=android"
+            alt="Google Play Store"
+          />
+        </a>
+      </>
+    ),
+  },
+  {
     title: "Encrypt your PDFs",
     Svg: require("@site/static/img/lockpdfy.svg").default,
     description: (
@@ -37,43 +67,13 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
-  {
-    title: "Digitalize austrian invoices",
-    Svg: require("@site/static/img/bonreader.svg").default,
-    description: (
-      <>
-        Scan QR codes on printed invoices and extract, store and export
-        contained data.
-        <a href="https://belegscan.at/">
-          <img
-            src="https://img.shields.io/badge/Web-BelegScan.at-blue?style=flat&logo=pwa"
-            alt="BelegScan.at PWA"
-          />
-        </a>
-        <br></br>
-        <a href="/obtainium/redirect.html?r=obtainium%3A%2F%2Fadd%2Fhttps%3A%2F%2Fgithub.com%2FCodeuctivity%2Fcodeuctivity.github.io">
-          <br></br>
-          <img
-            src="https://img.shields.io/badge/Obtainium-BonReader-green?style=flat&logo=android"
-            alt="Obtainium"
-          />
-        </a>
-        <br></br>
-        <a href="blog/Bye%20bye%20google%20play%20store">
-          <img
-            src="https://img.shields.io/badge/Google%20Play%20Store-BonReaderFree-lightgrey?style=flat&logo=android"
-            alt="Google Play Store"
-          />
-        </a>
-      </>
-    ),
-  },
+
   {
     title: "Libraries",
     Svg: require("@site/static/img/NuGet.svg").default,
     description: (
       <>
-        Compare images. One of my nuget packages.<br></br>
+        Compare images.<br></br>
         <a href="https://www.nuget.org/packages/Codeuctivity.ImageSharpCompare/">
           ImageSharp based{" "}
           <img
@@ -87,6 +87,14 @@ const FeatureList: FeatureItem[] = [
           <img
             src="https://img.shields.io/nuget/v/Codeuctivity.SkiaSharpCompare.svg"
             alt="Codeuctivity.SkiaSharpCompare"
+          />
+        </a>
+        Sanitize filenames<br></br>
+        <a href="https://www.nuget.org/packages/Codeuctivity.SanitizeFilename/">
+          Covering edge cases, Ntfs, Ext4, and more{" "}
+          <img
+            src="https://img.shields.io/nuget/v/Codeuctivity.SanitizeFilename.svg"
+            alt="Codeuctivity.SanitizeFilename"
           />
         </a>
       </>

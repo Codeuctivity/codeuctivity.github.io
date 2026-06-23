@@ -1,6 +1,5 @@
 {
     "recommendations": [
-        "spmeesseman.vscode-taskexplorer",
         "ms-playwright.playwright",
         "streetsidesoftware.code-spell-checker"
     ]

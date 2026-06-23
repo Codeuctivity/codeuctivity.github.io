@@ -88,7 +88,7 @@ const FeatureList: FeatureItem[] = [
             src="https://img.shields.io/nuget/v/Codeuctivity.SkiaSharpCompare.svg"
             alt="Codeuctivity.SkiaSharpCompare"
           />
-        </a>
+        </a><br></br>
         Sanitize filenames<br></br>
         <a href="https://www.nuget.org/packages/Codeuctivity.SanitizeFilename/">
           Covering edge cases, Ntfs, Ext4, and more{" "}

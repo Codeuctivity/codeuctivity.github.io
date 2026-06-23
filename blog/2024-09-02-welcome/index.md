@@ -11,6 +11,8 @@ tags: [google play store, android, obtainium]
 
 Google Play Store is a great platform to distribute Android apps. However, the recurring effort to keep the changing regulatory requirement up to date is not worth it for me. I have decided to let my dev profile fade away and focus on other things.
 
+<!-- truncate -->
+
 ![1725277366437](image/index/1725277366437.png)
 
 ## App store entries today that will be removed

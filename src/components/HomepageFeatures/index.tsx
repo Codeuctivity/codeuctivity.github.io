@@ -47,6 +47,9 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Scan QR codes on printed invoices and extract, store and export contained data.
+        <a href="https://belegscan.at/"><br></br>
+          <img src="https://img.shields.io/badge/Web-BelegScan.at-blue?style=flat&logo=pwa" alt="BelegScan.at PWA" />
+        </a><br></br>
         <a href="/obtainium/redirect.html?r=obtainium%3A%2F%2Fadd%2Fhttps%3A%2F%2Fgithub.com%2FCodeuctivity%2Fcodeuctivity.github.io"><br></br>
           <img src="https://img.shields.io/badge/Obtainium-BonReader-green?style=flat&logo=android" alt="Obtainium" />
         </a><br></br>

@@ -13,7 +13,7 @@ Give it a try at [BelegScan.at](https://belegscan.at).
 
 ## What is BelegScan?
 
-BelegScan reads Austrian cash register QR codes (RKSV - Registrierkassensicherheitsverordnung) and displays receipt data clearly. The web app works for free and runs directly in your browser – no app installation required.
+BelegScan.at reads Austrian cash register QR codes (RKSV - Registrierkassensicherheitsverordnung) and displays receipt data clearly. The web app works for free and runs directly in your browser – no app installation required.
 
 ## Key Features
 
@@ -33,6 +33,8 @@ BelegScan validates the cryptographic signatures embedded in Austrian cash regis
 - **Integrity**: Verifies the receipt data hasn't been tampered with
 - **Compliance**: Helps businesses and consumers verify RKSV compliance
 - **Trust**: Provides instant verification that receipts are genuine and unmodified
+
+![BelegScan Signature Validation](image/belegscan-signature-validation.jpg)
 
 ## Why PWA?
 

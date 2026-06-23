@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
@@ -42,8 +42,6 @@ const config: Config = {
         // },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -69,13 +67,6 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
-        //  {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/codeuctivity',
           label: 'GitHub',
@@ -85,42 +76,21 @@ const config: Config = {
     },
     footer: {
       links: [
-        // {
-        //   title: 'Docs',
-        //   items: [
-        //     {
-        //       label: 'Tutorial',
-        //       to: '/docs/intro',
-        //     },
-        //   ],
-        // },
         {
-          title: 'Things',
+          title: 'Awesome Stuff',
           items: [
             {
-              label: 'Nuget',
+              label: 'More nuget packages',
               href: 'https://www.nuget.org/packages?q=Codeuctivity',
             },
             {
               label: 'Buy me a coffee! Do it!',
               href: 'https://buymeacoffee.com/stesee',
             },
-            // {
-            //   label: 'Stack Overflow',
-            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            // },
-            // {
-            //   label: 'Discord',
-            //   href: 'https://discordapp.com/invite/docusaurus',
-            // },
-            // {
-            //   label: 'Twitter',
-            //   href: 'https://twitter.com/docusaurus',
-            // },
           ],
         },
         {
-          title: 'More Things',
+          title: 'More cool things',
           items: [
             {
               label: 'Blog',
@@ -129,6 +99,19 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/codeuctivity',
+            },
+          ],
+        },
+        {
+          title: 'Even more things',
+          items: [
+            {
+              label: 'NPM Packages',
+              to: 'https://www.npmjs.com/~codeuctivity',
+            },
+            {
+              label: 'Office document service',
+              href: 'https://ods.codeuctivity.cloud/',
             },
           ],
         },

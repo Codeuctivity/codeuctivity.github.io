@@ -73,7 +73,3 @@ In your message, include:
 3. your goal (CI, internal apps, distribution, etc.)
 4. timeframe/end date
 5. whether you need **faster updates** or **compatibility/backports** for older versions
-
-## Next steps
-
-Send a request to **codeuctivity@gmail.com**.

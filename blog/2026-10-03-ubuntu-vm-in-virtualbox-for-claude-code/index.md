@@ -5,7 +5,7 @@ authors: [stesee]
 tags: [virtualbox, ubuntu, claude code, hyper-v, windows]
 ---
 
-I wanted a disposable Linux machine on my Windows 11 box where Claude Code can run on its own and that I can reach from my phone. Unlike on my main machine, it has no access to my personal data there - a setup a recent [Cloud Security Alliance note on prompt injection in Claude Code](https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-automode-prompt-injection-2026/) recommends. This walkthrough covers creating the VM from the command line, the unattended Ubuntu install, a Hyper-V trap that froze the installer, and starting Claude Code Remote Control on every boot.
+I wanted a disposable Linux machine on my Windows 11 box where Claude Code can run on its own and that I can reach from my phone. Keeping my personal files outside the VM limits its access to my data, though the bidirectional clipboard configured below can still expose copied host data to the guest. A recent [Cloud Security Alliance note on prompt injection in Claude Code](https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-automode-prompt-injection-2026/) recommends running agents in a disposable VM. This walkthrough covers creating the VM from the command line, the unattended Ubuntu install, a Hyper-V trap that froze the installer, and starting Claude Code Remote Control on every boot.
 
 ![Claude Code session of the VM, opened in a browser](image/claude-code-session-in-browser.png)
 

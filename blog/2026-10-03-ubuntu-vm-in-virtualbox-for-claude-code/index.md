@@ -274,6 +274,60 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'no
 
 Running it inside `tmux` has a second benefit: `tmux attach -t claude` shows the live session in a terminal, for example to confirm the first-run prompts. Detach again with `Ctrl+B`, then `D`.
 
+## Add a swap file
+
+4 GB of RAM is not much for a GNOME desktop plus Claude Code plus whatever the agent builds or tests. When memory runs out, the kernel kills a process - often the build, sometimes the session itself. A swap file gives it room to breathe. Check first what is there:
+
+```bash
+swapon --show
+free -h
+```
+
+An 8 GB swap file on the ext4 root disk:
+
+```bash
+sudo swapoff -a                       # in case /swapfile exists and is in use
+sudo fallocate -l 8G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
+
+To activate it at every boot it needs a line in `/etc/fstab`. Add it only if it is not there yet:
+
+```bash
+grep -q '^/swapfile ' /etc/fstab || echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+```
+
+After that `swapon --show` lists `/swapfile` with 8G. Inside the VM the 8 GB are reserved right away. The `.vdi` on the host only grows as swap is actually written.
+
+Swap is a safety net, not more memory: once the VM swaps heavily it gets slow. If that happens regularly, give the VM more RAM instead (`VBoxManage modifyvm ClaudeAgent --memory 6144` while it is powered off).
+
+## Let the agent use sudo
+
+Installing a package or restarting a service needs `sudo`, and `sudo` asks for a password. A session driven from the phone has no terminal to type it into, so the command just fails with `sudo: a terminal is required to read the password`.
+
+In this VM the agent may use `sudo` without a password. The rule goes into its own file below `/etc/sudoers.d`, written through `visudo` so that a typo cannot lock `sudo` up:
+
+```bash
+echo 'stefan ALL=(ALL) NOPASSWD: ALL' | sudo EDITOR='tee' visudo -f /etc/sudoers.d/90-stefan-nopasswd
+sudo chmod 0440 /etc/sudoers.d/90-stefan-nopasswd
+```
+
+This asks for the password one last time. `visudo` checks the syntax before it saves; `0440` is the file mode `/etc/sudoers.d/README` asks for. Check the result with:
+
+```bash
+sudo -k              # forget the cached password
+sudo -n true && echo "passwordless sudo works"
+sudo -l              # lists "(ALL) NOPASSWD: ALL"
+```
+
+The file name matters: files in `/etc/sudoers.d` are read in alphabetical order and the last matching rule wins, so `90-...` comes after the default `%sudo ALL=(ALL:ALL) ALL` rule from `/etc/sudoers`.
+
+This makes the agent root in the VM - which is the reason for giving it a VM of its own. Do not do this on a machine that holds anything you care about. Claude Code's own permission prompts stay in place: it still asks before it runs a `sudo` command, unless the permission mode or an allow rule covers it.
+
+To take it back, delete the file: `sudo rm /etc/sudoers.d/90-stefan-nopasswd`.
+
 ## Start the VM with Windows
 
 To start the VM in the background at every Windows logon:
@@ -289,8 +343,9 @@ Remove the task again with `schtasks /Delete /TN "ClaudeAgent VM"`.
 ## What to keep in mind
 
 - **Memory:** the VM reserves its 4 GB while it runs. On a 16 GB host that is noticeable; during the install my host ran critically low on free memory.
-- **Disk:** the dynamic disk grows up to 60 GB. Keep an eye on free space on the host.
+- **Disk:** the dynamic disk grows up to 60 GB, and the swap file can account for 8 GB of it. Keep an eye on free space on the host.
 - **Speed:** with Hyper-V active on the host, the VM runs in the slower fallback mode. It works, but it is not fast.
+- **Root in the VM:** with passwordless `sudo` the agent can change anything inside the VM. Shared folders and the bidirectional clipboard are the paths back to the host - keep them as narrow as you need them.
 - **Host must stay awake:** if Windows sleeps, the VM and the session are gone until it wakes up.
 
 For questions or feedback, contact us at [Codeuctivity@gmail.com](mailto:Codeuctivity@gmail.com).

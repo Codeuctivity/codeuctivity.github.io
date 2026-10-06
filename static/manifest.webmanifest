@@ -1,0 +1,15 @@
+{
+  "name": "codeuctivity",
+  "short_name": "codeuctivity",
+  "description": "Turning Coffee into Code: A Journey of Joyful Creation",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#1b1b1d",
+  "background_color": "#1b1b1d",
+  "icons": [
+    { "src": "/img/app/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
+    { "src": "/img/app/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" },
+    { "src": "/img/app/icon-maskable-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ]
+}

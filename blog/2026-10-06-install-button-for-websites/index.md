@@ -108,10 +108,19 @@ What is easy to get wrong:
 | Desktop | Firefox | No | Not supported; the app only runs in a tab |
 | Mac | Safari | No | File → "Add to Dock" (macOS Sonoma and later) |
 
+## A working example: this blog
+
+This site uses the same technique - in a Chromium browser the [homepage](/) shows an "Install app" button. It is a Docusaurus site, so the pieces are spread over React instead of living in one file, and the [source is public](https://github.com/Codeuctivity/codeuctivity.github.io):
+
+- [`static/manifest.webmanifest`](https://github.com/Codeuctivity/codeuctivity.github.io/blob/main/static/manifest.webmanifest) - the manifest, linked through `headTags` in [`docusaurus.config.ts`](https://github.com/Codeuctivity/codeuctivity.github.io/blob/main/docusaurus.config.ts)
+- [`src/clientModules/installPrompt.ts`](https://github.com/Codeuctivity/codeuctivity.github.io/blob/main/src/clientModules/installPrompt.ts) - catches `beforeinstallprompt` as soon as the bundle runs, because the event usually fires before React has hydrated
+- [`src/components/InstallButton/index.tsx`](https://github.com/Codeuctivity/codeuctivity.github.io/blob/main/src/components/InstallButton/index.tsx) - the button, rendered only while an install offer exists
+- [`e2e/install.spec.ts`](https://github.com/Codeuctivity/codeuctivity.github.io/blob/main/e2e/install.spec.ts) - a Playwright test for it
+
+It deliberately has no service worker, so the installed blog needs a connection, like the site itself.
+
 ## Summary
 
 A manifest and a 20-line event handler make a website installable with one click on Android and on desktop Chromium. Nothing but a deployment stands between `git push` and the user's home screen.
-
-The source of this blog, including this post, is on GitHub: [Codeuctivity/codeuctivity.github.io](https://github.com/Codeuctivity/codeuctivity.github.io).
 
 For questions or feedback, contact us at [Codeuctivity@gmail.com](mailto:Codeuctivity@gmail.com).

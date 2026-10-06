@@ -46,6 +46,18 @@ const config: Config = {
     },
   ],
 
+  // Makes the site installable ("Add to Home screen" / "Install app"): the manifest names
+  // the app and its icons. There is deliberately no service worker, so the installed app
+  // needs a connection, like the site itself.
+  headTags: [
+    { tagName: 'link', attributes: { rel: 'manifest', href: '/manifest.webmanifest' } },
+    { tagName: 'meta', attributes: { name: 'theme-color', content: '#1b1b1d' } },
+    { tagName: 'link', attributes: { rel: 'apple-touch-icon', href: '/img/app/icon-192.png' } },
+  ],
+
+  // Catches the browser's install offer for the homepage's "Install app" button.
+  clientModules: ['./src/clientModules/installPrompt.ts'],
+
   presets: [
     [
       'classic',

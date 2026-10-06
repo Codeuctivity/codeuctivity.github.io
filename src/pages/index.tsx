@@ -3,6 +3,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "../components/HomepageFeatures";
+import InstallButton from "../components/InstallButton";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
@@ -17,6 +18,7 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
+          <InstallButton />
           {/* <Link
             className="button button--secondary button--lg"
             to="/docs/intro">

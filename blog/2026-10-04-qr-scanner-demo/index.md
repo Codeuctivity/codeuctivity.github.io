@@ -29,7 +29,7 @@ The camera needs a secure context, so the page is served over HTTPS, and the bro
 
 ## Using it on a desktop
 
-Phones bring a good camera along. On a desktop PC or a laptop with a weak built-in camera, scanning a code from a sheet of paper or a parcel label gets easier with an external webcam that has a decent resolution and can be pointed at the desk - for example the [Anker PowerConf C200 2K webcam](https://amzn.to/4wLNgjb) (affiliate link). The demo lists it in the camera dropdown like any other video device.
+Phones bring a good camera along. On a desktop PC or a laptop with a weak built-in camera, scanning a code from a sheet of paper or a parcel label gets easier with an external webcam that has a decent resolution and can be pointed at the desk - for example the [Anker PowerConf C200 2K webcam](https://www.amazon.de/dp/B09MFMTMPD?tag=codeuctivit0b-21&linkCode=ll2&linkId=001b89c0117ca532193bda9c410f55ac) (affiliate link). The demo lists it in the camera dropdown like any other video device.
 
 ## The package behind it
 

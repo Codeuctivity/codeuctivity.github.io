@@ -12,6 +12,9 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  // GitHub Pages redirects /blog/post to /blog/post/, so emit the slash form in links,
+  // canonicals and the sitemap - otherwise every sitemap entry is a 301.
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

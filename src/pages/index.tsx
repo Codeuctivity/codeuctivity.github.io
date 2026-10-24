@@ -35,7 +35,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description="codeuctivity builds small, open-source apps and libraries: BelegScan.at for Austrian receipts, LockPDFy for PDF encryption, and .NET and npm packages."
     >
       <HomepageHeader />
       <main>

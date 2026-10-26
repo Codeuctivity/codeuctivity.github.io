@@ -65,13 +65,8 @@ const config: Config = {
     [
       'classic',
       {
-        // docs: {
-        //   sidebarPath: './sidebars.ts',
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
+        // No docs section; the template's tutorial pages were removed.
+        docs: false,
         blog: {
           showReadingTime: true,
           editUrl:
@@ -79,6 +74,11 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        // Tag, archive, author and pagination pages only list posts. Google reports them as
+        // "Discovered - currently not indexed", so keep the sitemap to the pages worth indexing.
+        sitemap: {
+          ignorePatterns: ['/blog/tags/**', '/blog/archive/', '/blog/authors/**', '/blog/page/**'],
         },
       } satisfies Preset.Options,
     ],

@@ -40,9 +40,11 @@ const config: Config = {
   // Self-hosted, cookieless Umami analytics. GitHub Pages cannot reverse-proxy the
   // script under this origin the way the nginx-served apps do, so it loads directly.
   // data-domains keeps local dev and the github.io mirror out of the stats.
+  // static/stats-loader.js adds the tracker only after the page has loaded, so a slow or
+  // hanging Umami can't hold up the page's load event.
   scripts: [
     {
-      src: 'https://analytics.codeuctivity.cloud/script.js',
+      src: '/stats-loader.js',
       defer: true,
       'data-website-id': 'dc19b213-947c-477b-8eb5-4a5816542c18',
       'data-domains': 'codeuctivity.cloud',
